@@ -13,15 +13,18 @@ public class D2OpenAjaxHubWrapper {
 	private JavaScriptObject d2OpenAjaxHub;
 	
 	public D2OpenAjaxHubWrapper() {
+		init();
 	}
 	
 	public D2OpenAjaxHubWrapper(JavaScriptObject d2OpenAjaxHub) {
 		this.d2OpenAjaxHub = d2OpenAjaxHub;
 	}
 	
-	public void init() {
-		if (d2OpenAjaxHub == null)
+	protected void init() {
+		D2OpenAjaxUtils.injectD2OpenAjaxHubScripts();
+		if (d2OpenAjaxHub == null) {
 			d2OpenAjaxHub = getD2OpenAjaxHub();
+		}
 	}
 	
 	private native JavaScriptObject getD2OpenAjaxHub() /*-{

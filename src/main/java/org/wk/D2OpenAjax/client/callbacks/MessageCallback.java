@@ -13,8 +13,6 @@ public class MessageCallback extends ConnectCompletedCallback {
 		console("onConnectCompleted (MessageCallback): " + success + " " + error);
 
 		D2OpenAjaxMessageWrapper messageWrapper = new D2OpenAjaxMessageWrapper();
-		messageWrapper.init();
-
 		messageWrapper.put("oam_id", "");
 		messageWrapper.put("list", "a_status"+D2OpenAjaxMessageWrapper.PARAM_SPLIT_SEPARATOR+"r_object_type");
 		messageWrapper.put("a_status", "Draft");

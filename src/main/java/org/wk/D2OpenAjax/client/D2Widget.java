@@ -22,8 +22,9 @@ public class D2Widget implements EntryPoint {
 		hubWrapper.init();
 		hubWrapper.connectHub(new ConnectCompletedCallback());*/
 		
+		D2OpenAjaxMessageWrapper messageWrapper = new D2OpenAjaxMessageWrapper();
+
 		D2OpenAjaxHubWrapper hubWrapper = new D2OpenAjaxHubWrapper();
-		hubWrapper.init();
 		hubWrapper.connectHub(new MessageCallback());
 	}
 

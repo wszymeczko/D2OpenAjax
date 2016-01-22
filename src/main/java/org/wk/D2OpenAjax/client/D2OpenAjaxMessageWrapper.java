@@ -28,13 +28,15 @@ public class D2OpenAjaxMessageWrapper {
 	private JavaScriptObject d2OpenAjaxMessage;
 
 	public D2OpenAjaxMessageWrapper() {
+		init();
 	}
 
 	public D2OpenAjaxMessageWrapper(JavaScriptObject d2OpenAjaxMessage) {
 		this.d2OpenAjaxMessage = d2OpenAjaxMessage;
 	}
 
-	public void init() {
+	protected void init() {
+		D2OpenAjaxUtils.injectD2OpenAjaxHubScripts();
 		if (d2OpenAjaxMessage == null)
 			d2OpenAjaxMessage = getD2OpenAjaxMessage();
 	}

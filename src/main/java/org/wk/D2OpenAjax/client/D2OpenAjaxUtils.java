@@ -3,7 +3,10 @@ package org.wk.D2OpenAjax.client;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.wk.D2OpenAjax.client.resources.D2OpenAjaxHubBundle;
+
 import com.google.gwt.core.client.JsArrayString;
+import com.google.gwt.core.client.ScriptInjector;
 
 public class D2OpenAjaxUtils {
 
@@ -25,5 +28,18 @@ public class D2OpenAjaxUtils {
 	
 	public static native void console(String msg) /*-{
 		console.log(msg);
+	}-*/;
+	
+	public static void injectD2OpenAjaxHubScripts() {
+		if (!isInjected())
+			ScriptInjector.fromString(D2OpenAjaxHubBundle.INSTANCE.d2OpenAjaxHub().getText()).setWindow(ScriptInjector.TOP_WINDOW).inject();
+			ScriptInjector.fromString(D2OpenAjaxHubBundle.INSTANCE.d2OpenAjaxManagedHub().getText()).setWindow(ScriptInjector.TOP_WINDOW).inject();
+	}
+	
+	public static native final boolean isInjected() /*-{
+	    if ((typeof $wnd.D2OpenAjaxHub === "undefined") || ($wnd.D2OpenAjaxHub === null))
+		    return false;
+		else
+			return true;
 	}-*/;
 }
