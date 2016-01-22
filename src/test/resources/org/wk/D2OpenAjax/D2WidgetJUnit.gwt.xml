@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="D2Widget">
+  <inherits name='org.wk.D2OpenAjax.D2Widget' />
+</module>
