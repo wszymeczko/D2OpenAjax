@@ -1,6 +1,6 @@
 package pl.jcommerce.D2OpenAjax.client.callbacks;
 
-public class ForEachCallback {
+public abstract class ForEachCallback {
 
-	public void onKey(String key, String value, boolean hasNext) {	}
+	public abstract void onKey(String key, String value, boolean hasNext);
 }

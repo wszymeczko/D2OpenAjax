@@ -1,7 +1,6 @@
 package pl.jcommerce.D2OpenAjax.client.callbacks;
 
-public class MessageStoredCallback {
+public abstract class MessageStoredCallback {
 
-	public void onMessageStored(String channel, String message) {
-	}
+	public abstract void onMessageStored(String channel, String message);
 }
