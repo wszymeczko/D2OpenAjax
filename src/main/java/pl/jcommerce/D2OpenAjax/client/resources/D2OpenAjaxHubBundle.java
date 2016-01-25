@@ -1,4 +1,4 @@
-package org.wk.D2OpenAjax.client.resources;
+package pl.jcommerce.D2OpenAjax.client.resources;
 
 import com.google.gwt.core.shared.GWT;
 import com.google.gwt.resources.client.ClientBundle;
@@ -9,7 +9,7 @@ public interface D2OpenAjaxHubBundle extends ClientBundle {
 	
 	@Source("D2-OAH.js")
 	TextResource d2OpenAjaxHub();
-	
+
 	@Source("OpenAjaxManagedHub-all.js")
 	TextResource d2OpenAjaxManagedHub();
 }

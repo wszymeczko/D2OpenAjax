@@ -1,12 +1,12 @@
-package org.wk.D2OpenAjax.client;
+package pl.jcommerce.D2OpenAjax.client;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.wk.D2OpenAjax.client.resources.D2OpenAjaxHubBundle;
-
 import com.google.gwt.core.client.JsArrayString;
 import com.google.gwt.core.client.ScriptInjector;
+
+import pl.jcommerce.D2OpenAjax.client.resources.D2OpenAjaxHubBundle;
 
 public class D2OpenAjaxUtils {
 

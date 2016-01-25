@@ -1,13 +1,13 @@
-package org.wk.D2OpenAjax.client;
+package pl.jcommerce.D2OpenAjax.client;
 
-import static org.wk.D2OpenAjax.client.D2OpenAjaxUtils.*;
+import static pl.jcommerce.D2OpenAjax.client.D2OpenAjaxUtils.*;
 
 import java.util.List;
 
-import org.wk.D2OpenAjax.client.callbacks.ForEachCallback;
-
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArrayString;
+
+import pl.jcommerce.D2OpenAjax.client.callbacks.ForEachCallback;
 
 public class D2OpenAjaxMessageWrapper {
 	public static final String PARAM_EQ = "==";
@@ -50,17 +50,17 @@ public class D2OpenAjaxMessageWrapper {
 	}
 
 	public native boolean isGlobal() /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.isGlobal();
 	}-*/;
 
 	public native void setGlobal(boolean global) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		d2Message.setGlobal(global);
 	}-*/;
 
 	public native String getId(boolean raw) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.getId(raw);
 	}-*/;
 
@@ -69,12 +69,12 @@ public class D2OpenAjaxMessageWrapper {
 	}
 
 	private native JsArrayString getIdsAsJsArrayString() /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.getIds();
 	}-*/;
 
 	public native String setId(String id) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.setId(id);
 	}-*/;
 
@@ -83,127 +83,122 @@ public class D2OpenAjaxMessageWrapper {
 	}
 
 	private native String setIds(JsArrayString ids) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.setIds(ids);
 	}-*/;
 
 	public native boolean isMultipleIds() /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.isMultipleIds();
 	}-*/;
 
 	public native String getTargetType() /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.getTargetType();
 	}-*/;
 
 	public native String setTargetType(String target) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.setTargetType(target);
 	}-*/;
 
 	public native String getTargetId() /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.getTargetId();
 	}-*/;
 
 	public native String setTargetId(String target) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.setTargetId(target);
 	}-*/;
 
 	public native String getExcludedType() /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.getExcludedType();
 	}-*/;
 
 	public native String setExcludedType(String excluded) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.setExcludedType(excluded);
 	}-*/;
 
 	public native String getExcludedId() /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.getExcludedId();
 	}-*/;
 
 	public native String setExcludedId(String excluded) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.setExcludedId(excluded);
 	}-*/;
 
 	public native String getCointainerUid() /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.getCointainerUid();
 	}-*/;
 
 	public native String setCointainerUid(String containerUid) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.setCointainerUid(containerUid);
 	}-*/;
 
 	public native boolean isVolatile() /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.isVolatile();
 	}-*/;
 
 	public native void setVolatile(boolean volatileEvent) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		d2Message.setVolatile(volatileEvent);
 	}-*/;
 
 	public native String getSender() /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.getSender();
 	}-*/;
 
 	public native void setSender(String sender) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		d2Message.setSender(sender);
 	}-*/;
 
 	public native String getValue() /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.getValue();
 	}-*/;
 
 	public native void setValue(String value) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		d2Message.setValue(value);
 	}-*/;
 
 	public native String get(String name) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.get(name);
 	}-*/;
 
 	public native void put(String name, String value) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		d2Message.put(name, value);
 	}-*/;
 
 	public native void each(ForEachCallback forEach, D2OpenAjaxMessageWrapper scope, boolean decode) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
-		var d2Scope = scope.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Scope = scope.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		d2Message.each(callbackForEach, d2Scope, decode);
 
 		function callbackForEach(key, value, hasNext) {
-			forEach.@org.wk.D2OpenAjax.client.callbacks.ForEachCallback::onKey(Ljava/lang/String;Ljava/lang/String;Z)(key, value, hasNext);
+			forEach.@pl.jcommerce.D2OpenAjax.client.callbacks.ForEachCallback::onKey(Ljava/lang/String;Ljava/lang/String;Z)(key, value, hasNext);
 		}
 	}-*/;
 
 	public native String decodeParameterValue(String value) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.decodeParameterValue(value);
 	}-*/;
 
 	public native String encodeParameterValue(String value) /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
+		var d2Message = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
 		return d2Message.encodeParameterValue(value);
-	}-*/;
-
-	public native void showParameters() /*-{
-		var d2Message = this.@org.wk.D2OpenAjax.client.D2OpenAjaxMessageWrapper::d2OpenAjaxMessage;
-		console.log(d2Message);
 	}-*/;
 }

@@ -1,4 +1,4 @@
-package org.wk.D2OpenAjax.client;
+package pl.jcommerce.D2OpenAjax.client;
 
 public class D2OpenAjaxConstants {
 	public static final String D2_EVENT_WORKSPACE_CLOSED = "D2_EVENT_WORKSPACE_CLOSED";
