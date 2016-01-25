@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xml>
-<module rename-to='D2Widget'>
+<module rename-to='D2OpenAjax'>
 	<inherits name='com.google.gwt.user.User' />
 	<source path='client' />
 </module>
