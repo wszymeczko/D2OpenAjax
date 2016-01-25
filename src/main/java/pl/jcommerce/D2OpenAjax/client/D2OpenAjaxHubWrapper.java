@@ -41,7 +41,7 @@ public class D2OpenAjaxHubWrapper {
 		d2Hub.connectHub(connectCompleted, onInitWidget, onActiveWidget);
 		
 		function connectCompleted(hubClient, success, error) {
-			connectCallback.@pl.jcommerce.D2OpenAjax.client.callbacks.ConnectCompletedCallback::onConnectCompleted(Lorg/wk/D2OpenAjax/client/D2OpenAjaxHubWrapper;ZZ)(javaThis, success, error);
+			connectCallback.@pl.jcommerce.D2OpenAjax.client.callbacks.ConnectCompletedCallback::onConnectCompleted(Lpl/jcommerce/D2OpenAjax/client/D2OpenAjaxHubWrapper;ZZ)(javaThis, success, error);
 		}
 
 		function onInitWidget(message) {
