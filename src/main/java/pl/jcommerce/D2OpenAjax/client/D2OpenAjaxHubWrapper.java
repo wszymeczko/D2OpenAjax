@@ -171,6 +171,6 @@ public class D2OpenAjaxHubWrapper {
 	
 	public native void replayMessage(boolean forceReplay) /*-{
 		var d2Hub = this.@pl.jcommerce.D2OpenAjax.client.D2OpenAjaxHubWrapper::d2OpenAjaxHub;
-		d2Hub.replayMessage();
+		d2Hub.replayMessage(forceReplay);
 	}-*/;
 }
