@@ -11,7 +11,7 @@ import pl.jcommerce.D2OpenAjax.client.resources.D2OpenAjaxHubBundle;
 public class D2OpenAjaxUtils {
 
 	public static List<String> fromJsArray(JsArrayString jsArray) {
-		List<String> array = new ArrayList<String>();
+		List<String> array = new ArrayList<>();
 		for (int i=0; i<jsArray.length(); i++) {
 			array.add(jsArray.get(i));
 		}
@@ -31,12 +31,13 @@ public class D2OpenAjaxUtils {
 	}-*/;
 	
 	public static void injectD2OpenAjaxHubScripts() {
-		if (!isInjected())
+		if (!isInjected()) {
 			ScriptInjector.fromString(D2OpenAjaxHubBundle.INSTANCE.d2OpenAjaxHub().getText()).setWindow(ScriptInjector.TOP_WINDOW).inject();
 			ScriptInjector.fromString(D2OpenAjaxHubBundle.INSTANCE.d2OpenAjaxManagedHub().getText()).setWindow(ScriptInjector.TOP_WINDOW).inject();
+		}
 	}
 	
-	public static native final boolean isInjected() /*-{
+	public static final native boolean isInjected() /*-{
 	    if ((typeof $wnd.D2OpenAjaxHub === "undefined") || ($wnd.D2OpenAjaxHub === null))
 		    return false;
 		else
